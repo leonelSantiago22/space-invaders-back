@@ -13,7 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class login {
+public class UsuarioEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idUsuario", length = 1)
@@ -27,8 +27,16 @@ public class login {
 	@Column(name="nick_name")
 	private String aliasUsuario;
 	
+	@Column(name ="nombre_completo")
+	private String nombreCompleto;
+	
 	@Column(name="password")
 	private String password;
 	
+	@Column(name ="top_score")
+	private Integer topScore;
+	
+	@Column(name = "edad")
+	private Integer edad;
 	
 }
